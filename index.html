@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>local storage test</title>
+  </head>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #eaeaea;
+    }
+
+    .container .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .container {
+      display: flex;
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .container .options button {
+      border: none;
+      background: transparent;
+      height: 30px;
+      font-weight: 800;
+      color: #fff;
+      border-radius: 15px;
+      background: #8f4aaa;
+      transition: 200ms;
+    }
+    .container .options button:hover {
+      filter: brightness(1.2);
+    }
+    .container .value {
+      text-align: center;
+    }
+  </style>
+  <body>
+
+    <div class="wrapper">
+      <div class="container">
+        <p>Click the button to increment the value</p>
+        <div class="value" id="val1">0</div>
+        <div class="options">
+          <button id="btn1" type="button" name="button">add one</button>
+          <button id="btn2" type="button" name="button">subtract one</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+  <script src="./scripts/app.js" charset="utf-8"></script>
+</html>
